@@ -1,0 +1,1 @@
+This functionality can work only if you add required folders to your uploads folder
