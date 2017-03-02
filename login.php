@@ -25,6 +25,7 @@ if (isset($_POST["submit_btn"]))
         if (!($num > 0))
         {
             $_SESSION["emailexists"] = "NO";
+		$_SESSION["loggedin"] = "no";
         }
         else
         {
