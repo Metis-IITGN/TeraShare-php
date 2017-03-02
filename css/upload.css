@@ -8,7 +8,7 @@
 
 body
 {
-	background-color: #E93735;
+	background-color: #44B9EF;
 }
 
 .menubars,.navbar-brand
@@ -37,55 +37,29 @@ transition: all 500ms ease;
 {
 	font-size: 16px;
 }
-.big-header
+
+form
 {
-	font-size: 80px;
-	font-weight: 600;
-	color: white;
-}
-.contact-description
-{
-	font-size: 25px;
-	color: white;
+	margin-top: 2%;
+	min-height: 80%;
+	width: 75%;
+	min-width: 284.39px !important;
+	background-color: #B5E3FA;
+	border-radius: 10px;
+	padding-left: 10%;
+	padding-right: 10%;
+	padding-bottom: 20px;
 }
 
-.col-sm-6
+.form-content
 {
-	color: white;
+	padding-top: 20px
 }
-#contact-container
-{
-	margin-top: 50px;
-}
-
-.text-box
-{
-	display: block;
-	outline: 0;
-	color: #ffffff;
-	font-size: 12px;
-	background: rgba(255,255,255, 0.35);
-	border: 0;
-	border-radius: 2px;
-	height: 23px;
-	margin-top: 10px;
-	width: 350px;
-	padding-left: 4px;
-}
-#message-box
-{
-	height: 50px;
-}
-
 .btn
 {
-	margin-top: 10px;
-	background-color: black;
+	background-color: #44B9EF;
 	color: #ffffff;
-	border-radius: 0px;
-	border: 0;
-	margin-right: 6px;
-	font-family: 'Rubik', sans-serif;
+	border-radius: 7px;
 	-webkit-transition: all 500ms ease;
 -moz-transition: all 500ms ease;
 -ms-transition: all 500ms ease;
@@ -94,6 +68,37 @@ transition: all 500ms ease;
 }
 .btn:hover
 {
-	font-size: 15px;
-	color: white;
+	color: #ffffff;
+	background-color: #B5E3FA;
+	border-color: #44B9EF;
+	
+	-webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+
+label
+{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 16px;
+	color: #63676A;
+}
+
+#red-link
+{
+	color: red;
+}
+
+.form-control
+{
+	background-color: #44B9EF;
+	color: black;
+	display: inline;
+	width: 200px;
+}
+
+.glyphicon {
+    font-size: 50px;
 }

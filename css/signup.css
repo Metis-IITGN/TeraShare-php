@@ -8,7 +8,7 @@
 
 body
 {
-	background-color: #E93735;
+	background-color: #44B9EF;
 }
 
 .menubars,.navbar-brand
@@ -37,55 +37,32 @@ transition: all 500ms ease;
 {
 	font-size: 16px;
 }
-.big-header
+#navbar,#myNavbar
 {
-	font-size: 80px;
-	font-weight: 600;
-	color: white;
+	opacity: 0;
 }
-.contact-description
+#form
 {
-	font-size: 25px;
-	color: white;
+	opacity: 0;
 }
-
-.col-sm-6
+form
 {
-	color: white;
-}
-#contact-container
-{
-	margin-top: 50px;
-}
-
-.text-box
-{
-	display: block;
-	outline: 0;
-	color: #ffffff;
-	font-size: 12px;
-	background: rgba(255,255,255, 0.35);
-	border: 0;
-	border-radius: 2px;
-	height: 23px;
 	margin-top: 10px;
-	width: 350px;
-	padding-left: 4px;
-}
-#message-box
-{
-	height: 50px;
+	
+	width: 45%;
+	min-width: 284.39px !important;
+	background-color: #F5FAFE;
 }
 
+.form-content
+{
+	padding: 20px 33px 1px 33px;
+}
 .btn
 {
-	margin-top: 10px;
-	background-color: black;
-	color: #ffffff;
-	border-radius: 0px;
-	border: 0;
-	margin-right: 6px;
-	font-family: 'Rubik', sans-serif;
+	background-color: #E93735;
+	color: #EFFFFF;
+	border-radius: 4px;
 	-webkit-transition: all 500ms ease;
 -moz-transition: all 500ms ease;
 -ms-transition: all 500ms ease;
@@ -94,6 +71,29 @@ transition: all 500ms ease;
 }
 .btn:hover
 {
-	font-size: 15px;
-	color: white;
+	color: #E93735;
+	background-color: #EFFFFF;
+	border-color: #E93735;
+	-webkit-transition: all 500ms ease;
+-moz-transition: all 500ms ease;
+-ms-transition: all 500ms ease;
+-o-transition: all 500ms ease;
+transition: all 500ms ease;
+}
+#red-box
+{
+	background-color: #E93735;
+	width: 100%;
+	height: 70px;
+	padding-top: 15px;
+	font-size: 30px;
+	color: #EFFFFF;
+}
+
+label
+{
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 12px;
+	color: #63676A;
 }
