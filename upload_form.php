@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-
+$_SESSION["message"];
 $db_username = "root";
     $db_password = "";
     $db = "names";   $db=mysqli_connect("localhost",$db_username,$db_password,$db) or die("Failed to connect to database".mysql_error());
@@ -81,6 +81,12 @@ if ($_SESSION["loggedin"] === "no")
 					</div>
 					</div>
 				</form>
+				<?php if (isset($_SESSION["message"]))
+{
+	echo "<h5>".$_SESSION["message"]."</h5>";
+	$_SESSION["message"] = NULL;
+}
+				?>
 				
 			</div>
 		
