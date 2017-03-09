@@ -35,11 +35,12 @@ if ($uploadOk == 0) {
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-        echo "The file ". basename($_FILES["fileToUpload"]["name"]). " has been uploaded.";
-		
+        	
 		$q = "INSERT INTO files(folder,file_name,description,uploaded_by,time) VALUES('".($_POST["course_initials"])."','".($_POST["course_initials"]."_".$_POST["course_code"]."_".basename($_FILES["fileToUpload"]["name"]))."','".$_POST["description"]."','".$_SESSION["email"]."','now()');";
 		
 		mysqli_query($db,$q) or die(mysql_error());
+		$_SESSION["message"] = "Successfully uploaded! Upload more files!";
+		header("Location: upload_form.php");
 		
     } else {
         echo "Sorry, there was an error uploading your file.";
