@@ -32,7 +32,7 @@ if (isset($_POST["submit_btn"]))
         {
 			$_SESSION["emailexists"] = "YES";    
         $_SESSION["loggedin"] = "yes";
-        header("Location: download_form.php");
+        header("Location: index.php");
         }
   
              
@@ -58,6 +58,12 @@ if (isset($_POST["submit_btn"]))
 	<title>TeraShare</title>
 	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="css/login.css">
+	<style>
+		.alert
+		{
+			color: red;
+		}
+	</style>
 	
 </head>
     <body>
@@ -92,10 +98,9 @@ if (isset($_POST["submit_btn"]))
 				<div class="form-group" align="right">	
                 <input  class="btn btn-lg" type="submit" name="submit_btn" value="Login">
 					</div>
+				<div style="color:red; font-weight:bolder;">
 				
-				<?php echo $_SESSION["message"];
-				$_SESSION["message"] = NULL;
-				?>
+				</div>
                 
       </div>
 				</form>
